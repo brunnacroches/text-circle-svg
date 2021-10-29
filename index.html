@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="en"
+    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+    <title>Caminho de texto circular </title>
+    <style>
+        text {
+            font-size: 76px;
+            font-family: Copperplate, Copperplate Gothic, serif;
+            font-weight: bold;
+            font-variant: small-caps;
+            font-variant-ligatures: none;
+            stroke: black;
+            stroke-width: 1.5px;
+            fill: white;
+        }
+    </style>
+    <defs>
+        <path id="textcircle"
+              d="M250,400
+                 a150,150 0 1,1 0,-300a140,150 0 0,1 0,300Z"
+              transform="rotate(12,250,250)"/>
+    </defs>
+    <rect width="100%" height="100%" fill="silver" />
+    <text>
+        <textPath xlink:href="#textcircle"
+                  aria-label="All for One &amp; One for All"
+                  textLength="942">&#160;um para todos
+                                         para um &amp;</textPath>
+    </text>
+</svg>
+
+<!--  d="M250 >>> direção eixo x(horizontal)  ( > = direita)(< = esquerda)
+      400 >>> direção eixo y(vertical)  ( < = cima )( > = baixo(centro))
+
+      a150, >> curvatura do lado esquerdo para o esquerdo ( < mais fechado ) ( > mais aberto )
+      150  >> curvatura do lado esquerdo para o direito ( < mais fechado ) ( > mais aberto )
+
+      0 
+      0,1 
+      0, >> (abertura do circulo)
+      -300
+
+      a150, >> curvatura do lado direito para o lado direito(< mais fechado) (> mais aberto )
+      150  >> curvatura do lado direito para o lado esquerdo ( < mais fechado ) ( > mais aberto )
+
+      0
+      0,1
+      
+      0,300Z
+              transform="rotate(12,250,250)"/> -->
